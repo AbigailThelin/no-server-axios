@@ -34,18 +34,11 @@ class Home extends React.Component{
     render(){
         return(
             <div className='container'>
-            <Header/>
-            <PanelComp/>
-            {this.state.pokemons.map(pokemon => {
-                
-                return(
-                    <div className='pokemon'>
-                        <Modal pokemon={pokemon}  />
-                        {this.pokemon}  
-                    </div>
-                ) 
-            })
-            }
+                <Header/>
+                <PanelComp/>
+                {this.state.pokemons.map(pokemon => {
+                    return <Modal pokemon={pokemon}  />
+                })}
             </div>
         )
     }}

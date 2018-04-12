@@ -33,7 +33,7 @@ export default class Modal extends React.Component{
             />
           ];
         return(
-            <div >
+            <div className='pokemon'>
             {this.props.pokemon.name}
             <RaisedButton label="MORE INFO" onClick={this.handleOpen} />
 
