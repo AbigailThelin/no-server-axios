@@ -1,0 +1,9 @@
+.grid1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.info{
+    margin: 10px;
+}

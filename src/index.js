@@ -3,13 +3,17 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import { BrowserRouter } from 'react-router-dom';
-import { Provider } from 'react-redux';
-import store from './store/index';
+import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
+import { Fabric } from 'office-ui-fabric-react/lib//Fabric'
+// import { Provider } from 'react-redux';
+// import store from './store/index';
 
 ReactDOM.render(
-<Provider store={store}>
-    <BrowserRouter>
-        <App /> 
-    </BrowserRouter>
-</Provider>
+    <Fabric>
+        <MuiThemeProvider>
+            <BrowserRouter>
+                <App /> 
+            </BrowserRouter>
+        </MuiThemeProvider>
+    </Fabric>
 , document.getElementById('root'));
