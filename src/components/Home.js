@@ -3,7 +3,6 @@ import axios from 'axios';
 
 import Header from './header';
 import Modal from './modal';
-import PanelComp from './panel';
 import './home.css'
 
 
@@ -35,7 +34,6 @@ class Home extends React.Component{
         return(
             <div className='container'>
                 <Header/>
-                <PanelComp/>
                 {this.state.pokemons.map(pokemon => {
                     return <Modal pokemon={pokemon}  />
                 })}

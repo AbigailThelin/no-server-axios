@@ -1,4 +1,5 @@
 import React from 'react';
+import PanelComp from './panel';
 
 import './header.css'
 
@@ -13,7 +14,7 @@ class Header extends React.Component{
     render(){
         return(
             <div className='headerContainer'>
-header
+                <PanelComp/>
             </div>
         )
     }
